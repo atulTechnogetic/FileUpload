@@ -2,37 +2,62 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fileUploadWrapper {
+  border: 1px solid rgb(160, 69, 160);
+  background: #f3f3f3;
+  border-radius: 4px ;
+  margin: 10px;
+  margin-top: 20px;
+  max-width: 600px;
+  padding: 20px;
+  min-height: 100px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.inputfile {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: inline-block;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.file-box {
+  width: 100%;
+  border: 1px solid rgb(160, 69, 160);
+  border-radius: 4px 0 0 4px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.file-button {
+  background: rgb(160, 69, 160);
   color: white;
+  padding: 6px;
+  border: 1px solid rgb(160, 69, 160);
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.fileUploadWrapper > button {
+  margin-top: 20px;
+  background: white;
+  border: 1px solid rgb(160, 69, 160);
+  color: rgb(160, 69, 160);
+  border-radius: 4px;
+  padding: 7px 14px 7px 14px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 500px) {
+  .file-box {
+    border: 1px solid rgb(160, 69, 160);
+    border-radius: 4px;
+    height: 50px;
+    display: inline-block;
+    padding: 3px;
   }
-  to {
-    transform: rotate(360deg);
+  .file-button {
+    display: none;
   }
 }
